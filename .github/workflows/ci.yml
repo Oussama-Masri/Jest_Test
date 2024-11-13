@@ -1,6 +1,9 @@
 name: CI/CD Tests
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -22,4 +25,4 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test -- --watchAll=false
+        run: npm test
