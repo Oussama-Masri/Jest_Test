@@ -3,5 +3,5 @@ import HomeScreen from "./HomeScreen";
 
 test("Renders the HomeScreen component correctly", () => {
   render(<HomeScreen />);
-  expect(screen.getByText("Hello World!")).toBeInTheDocument();
+  expect(screen.getByText("Hello World!!")).toBeInTheDocument();
 });
